@@ -1,27 +1,30 @@
+package 문제풀이.week1.규정.boj_11723;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashSet;
+
 import java.util.StringTokenizer;
 
-public class BOJ_S5_11723 {
+public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		HashSet<String> set = new HashSet<>();
 		StringBuilder sb = new StringBuilder();
 		StringTokenizer st = null;
-		
-		int N = Integer.parseInt(br.readLine()); 
+
+		int N = Integer.parseInt(br.readLine());
 		for(int n=0;n<N;n++) {
 			st = new StringTokenizer(br.readLine());  //입력받은 명령
 			String s = st.nextToken();
-			
+
 			if(s.equals("add")) {
 				set.add(st.nextToken());
 				continue;
 			}
 			else if(s.equals("remove")) {
-				set.remove(st.nextToken()); 
+				set.remove(st.nextToken());
 				continue;
 			}
 			else if(s.equals("check")) {
@@ -44,7 +47,7 @@ public class BOJ_S5_11723 {
 				continue;
 			}
 			else if(s.equals("empty")) set.clear();
-			
+
 		}
 		System.out.println(sb.toString());
 	}

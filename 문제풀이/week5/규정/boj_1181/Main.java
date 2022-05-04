@@ -1,0 +1,4 @@
+package 문제풀이.week5.규정.boj_1181;
+
+public class Main {
+}
