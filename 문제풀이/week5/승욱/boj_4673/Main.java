@@ -9,10 +9,8 @@ public class Main {
             for (int j = 0; j < s.length(); j++) {
                 temp += (s.charAt(j) - '0');
             }
-            if (temp > 10000) {
-                continue;
-            }
-            check[temp] = true;
+            if (temp < 10001)
+                check[temp] = true;
         }
         for (int i = 1; i <= 10000; i++) {
             if (!check[i]) {
