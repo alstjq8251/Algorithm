@@ -3,7 +3,7 @@
 [![Since](https://img.shields.io/badge/since-2022.04.10-333333.svg?style=flat-square)](https://github.com/Java-Coding-Test-Study)
 
 ✔️ [Baekjoon Online Jndge](https://www.acmicpc.net/)  
-✔️ 일요일 8시 스터디  
+✔️ 일요일 9시 스터디  
 ✔️ 주 마다 백준 2문제씩 풀이  
 
 
