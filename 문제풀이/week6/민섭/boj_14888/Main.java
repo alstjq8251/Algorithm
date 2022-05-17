@@ -14,12 +14,13 @@ public class Main {
 	public static void main(String[] ars) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		N = Integer.parseInt(br.readLine());
-		
+		num = new int [N];
 		String[] op = br.readLine().split(" ");
 		for (int i = 0; i < N; i++) {
 			num[i] = Integer.parseInt(op[i]);
 		}
-		String[] op1 = br.readLine().split("");
+		operation = new int [4];
+		String[] op1 = br.readLine().split(" ");
 		for (int i = 0; i < 4; i++) {
 			operation[i] = Integer.parseInt(op1[i]);
 		}
@@ -35,6 +36,7 @@ public class Main {
 		{
 			MAX = Math.max(sum, MAX);
 			MIN = Math.min(sum, MIN);
+			return;
 		}
 		for(int i=0; i<4; i++)
 		{
